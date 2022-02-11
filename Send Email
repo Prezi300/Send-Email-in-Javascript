@@ -1,4 +1,4 @@
-#!/bin/javascript
+#!/usr/bin/env node
 
 <script src="https://smtpjs.com/v3/smtp.js">
 </script>
